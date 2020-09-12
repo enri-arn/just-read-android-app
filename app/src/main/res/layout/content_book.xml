@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="it.unito.di.justread.activities.BookActivity"
+    tools:showIn="@layout/activity_book">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/title_author_cardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:padding="5dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/book_title_info_book"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/item_default_title_book"
+                        android:textSize="34sp"
+                        android:ellipsize="marquee"
+                        android:textColor="@color/black"
+                        android:padding="5dp"
+                        android:singleLine="true" />
+
+                    <TextView
+                        android:id="@+id/book_author_info_book"
+                        android:layout_below="@+id/book_title_info_book"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/item_default_title_author"
+                        android:textSize="22sp"
+                        android:padding="5dp"
+                        android:ellipsize="marquee"
+                        android:singleLine="true"/>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/genre_cardview"
+                android:layout_width="match_parent"
+                android:layout_below="@id/info_cardview"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:padding="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/genre_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/genre_title"
+                        android:textColor="@color/black"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:padding="5dp"/>
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/genre_recyclerview"
+                        android:layout_below="@+id/genre_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/info_cardview"
+                android:layout_below="@+id/title_author_cardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:padding="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/info_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/info_title"
+                        android:textColor="@color/black"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:padding="5dp"/>
+
+                    <RelativeLayout
+                        android:id="@+id/rating_book_expanded"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/info_title">
+
+                        <TextView
+                            android:id="@+id/rate_book_info"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:text="@string/default_rate_expanded"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                            android:paddingRight="3dp"
+                            android:paddingLeft="3dp"
+                            android:paddingBottom="2dp"
+                            android:textSize="48sp"/>
+
+                        <RatingBar
+                            android:id="@+id/ratingBar"
+                            style="?attr/ratingBarStyleSmall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/fiveStar"
+                            android:layout_toEndOf="@+id/rate_book_info"
+                            android:layout_toRightOf="@+id/rate_book_info"
+                            android:isIndicator="true"
+                            android:max="100"
+                            android:numStars="5"
+                            android:layout_marginRight="15dp"
+                            android:progress="90"
+                            android:layout_marginEnd="15dp" />
+
+                        <TextView
+                            android:id="@+id/num_voters"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/ratingBar"
+                            android:layout_toEndOf="@+id/rate_book_info"
+                            android:layout_toRightOf="@+id/rate_book_info"
+                            android:layout_marginLeft="45dp"
+                            android:text="@string/default_number_voters"
+                            android:textSize="12sp"
+                            tools:ignore="SmallSp"
+                            android:layout_marginStart="45dp" />
+
+                        <ImageView
+                            android:id="@+id/voters"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/ratingBar"
+                            android:layout_toEndOf="@+id/num_voters"
+                            android:layout_toRightOf="@+id/num_voters"
+                            android:contentDescription="@string/default_number_voters"
+                            android:src="@drawable/ic_person_gray_24dp" />
+
+                        <ProgressBar
+                            android:id="@+id/fiveStar"
+                            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                            android:layout_width="200dp"
+                            android:layout_height="7dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_toEndOf="@+id/ratingBar"
+                            android:layout_toRightOf="@+id/ratingBar"
+                            android:indeterminate="false"
+
+                            android:layout_marginTop="14dp"
+                            android:progress="80"
+                            android:progressDrawable="@drawable/custom_progress_bar_five"
+                            android:scaleY="1.1" />
+
+                        <ProgressBar
+                            android:id="@+id/fourStar"
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:layout_width="200dp"
+                            android:layout_height="7dp"
+                            android:layout_alignLeft="@+id/fiveStar"
+                            android:layout_alignStart="@+id/fiveStar"
+                            android:layout_below="@+id/fiveStar"
+                            android:progress="90"
+                            android:progressDrawable="@drawable/custom_progress_bar_four"
+                            android:scaleY="1.1" />
+
+                        <ProgressBar
+                            android:id="@+id/threeStar"
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:layout_width="200dp"
+                            android:layout_height="7dp"
+                            android:layout_alignLeft="@+id/fourStar"
+                            android:layout_alignStart="@+id/fourStar"
+                            android:layout_below="@+id/fourStar"
+                            android:progress="20"
+                            android:indeterminate="false"
+                            android:progressDrawable="@drawable/custom_progress_bar_three"/>
+
+                        <ProgressBar
+                            android:id="@+id/twoStar"
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:layout_width="200dp"
+                            android:layout_height="7dp"
+                            android:layout_alignLeft="@+id/threeStar"
+                            android:layout_alignStart="@+id/threeStar"
+                            android:layout_below="@+id/threeStar"
+                            android:progress="45"
+                            android:indeterminate="false"
+                            android:progressDrawable="@drawable/custom_progress_bar_two"/>
+
+                        <ProgressBar
+                            android:id="@+id/oneStar"
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:layout_width="200dp"
+                            android:layout_height="7dp"
+                            android:layout_alignLeft="@+id/twoStar"
+                            android:layout_alignStart="@+id/twoStar"
+                            android:layout_below="@+id/twoStar"
+                            android:progress="10"
+                            android:indeterminate="false"
+                            android:progressDrawable="@drawable/custom_progress_bar_one"/>
+                    </RelativeLayout>
+
+                    <GridLayout
+                        android:id="@+id/info_gridlayout"
+                        android:layout_below="@+id/rating_book_expanded"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:columnCount="2">
+
+
+                        <TextView
+                            android:id="@+id/textView2"
+                            android:layout_width="180dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/publisher"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:padding="5dp"/>
+
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1"
+                            android:layout_row="0"
+                            android:text="@string/page"
+                            android:textSize="16sp"
+                            android:textColor="@color/black"
+                            android:padding="5dp" />
+
+                        <TextView
+                            android:id="@+id/default_publisher_lbl_book"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_column="0"
+                            android:layout_row="1"
+                            android:padding="5dp"
+                            android:text="@string/default_publisher" />
+
+                        <TextView
+                            android:id="@+id/default_pages_lbl_book"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1"
+                            android:layout_row="1"
+                            android:padding="5dp"
+                            android:text="@string/default_page" />
+
+                        <TextView
+                            android:id="@+id/textView6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_column="0"
+                            android:layout_row="2"
+                            android:text="@string/isbn"
+                            android:textSize="16sp"
+                            android:textColor="@color/black"
+                            android:padding="5dp"/>
+
+                        <TextView
+                            android:id="@+id/textView7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1"
+                            android:layout_row="2"
+                            android:text="@string/language"
+                            android:textSize="16sp"
+                            android:textColor="@color/black"
+                            android:padding="5dp"/>
+
+                        <TextView
+                            android:id="@+id/default_isbn_lbl_book"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_column="0"
+                            android:layout_row="3"
+                            android:padding="5dp"
+                            android:text="@string/default_isbn" />
+
+                        <TextView
+                            android:id="@+id/default_language_lblb_book"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1"
+                            android:layout_row="3"
+                            android:padding="5dp"
+                            android:text="@string/default_language" />
+                    </GridLayout>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/plot_cardview"
+                android:layout_below="@id/genre_cardview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:padding="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/plot_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/plot_title"
+                        android:textColor="@color/black"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:padding="5dp"/>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/plot_title">
+
+                        <TextView
+                            android:id="@+id/plot_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            android:text="@string/large_text"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                            android:padding="5dp"/>
+
+                        <ImageButton
+                            android:id="@+id/button_show_more"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_below="@id/plot_text"
+                            android:background="@null"
+                            android:visibility="visible"
+                            android:contentDescription="@string/show_more"
+                            android:src="@drawable/ic_expand_more_black_24dp" />
+                        <ImageButton
+                            android:id="@+id/button_show_less"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_below="@id/plot_text"
+                            android:background="@null"
+                            android:visibility="invisible"
+                            android:contentDescription="@string/show_more"
+                            android:src="@drawable/ic_expand_less_black_24dp" />
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/review_cardview"
+                android:layout_below="@id/plot_cardview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_margin="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:id="@+id/personal_review"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/profile_image_review"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_below="@+id/review_title"
+                            android:layout_centerHorizontal="true"
+                            android:contentDescription="@string/profile_image"
+                            android:src="@drawable/circle_background_icon" />
+
+                        <TextView
+                            android:id="@+id/review_title"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:text="@string/review_title1"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/textView4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/profile_image_review"
+                            android:layout_centerHorizontal="true"
+                            android:text="@string/default_review_text" />
+
+                        <RatingBar
+                            android:id="@+id/ratingBar_review"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/textView4"
+                            android:layout_centerHorizontal="true"
+                            android:numStars="5"
+                            android:scaleX="0.8"
+                            android:scaleY="0.8" />
+
+                        <EditText
+                            android:id="@+id/editText_review"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/ratingBar_review"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:ems="10"
+                            android:hint="@string/default_suggestion_review"
+                            android:inputType="textMultiLine"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+                    </RelativeLayout>
+
+                    <Button
+                        android:id="@+id/confirm_button_review"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_below="@+id/personal_review"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="5dp"
+                        style="@style/Widget.AppCompat.Button.Colored"
+                        android:textColor="@color/black"
+                        android:text="@string/default_confirm"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:id="@+id/general_reviews"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_below="@+id/confirm_button_review"
+                        android:text="@string/review_title2"
+                        android:textColor="@color/black"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:padding="5dp"/>
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recyclerview_review"
+                        android:layout_below="@id/general_reviews"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <RelativeLayout
+                        android:layout_below="@id/recyclerview_review"
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"/>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </RelativeLayout>
+
+</android.support.v4.widget.NestedScrollView>

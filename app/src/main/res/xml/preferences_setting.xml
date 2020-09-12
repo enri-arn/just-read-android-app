@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="@string/application_general"
+        android:key="general_preferences">
+
+        <SwitchPreference
+            android:title="@string/notifications"
+            android:key="switch_notify"
+            android:summary="@string/enable_notifications"
+            android:switchTextOn="on"
+            android:switchTextOff="off"/>
+
+        <SwitchPreference
+            android:key="switch_synchronize"
+            android:summary="@string/calendar_sincro"
+            android:title="@string/sincro_title"
+            android:switchTextOn="on"
+            android:switchTextOff="off"/>
+
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="@string/application_accessibility"
+        android:key="accessibility_preferences">
+        <ListPreference
+            android:entries="@array/lists"
+            android:entryValues="@array/lists"
+            android:defaultValue="Italiano"
+            android:summary="@string/choose_language"
+            android:key="list_preference_language"
+            android:title="@string/language_settings"/>
+
+        <SwitchPreference
+            android:key="switch_fastscroll"
+            android:title="@string/fast_scroll"
+            android:summary="@string/fast_scroll_summary"
+            android:switchTextOn="on"
+            android:switchTextOff="off"/>
+    </PreferenceCategory>
+
+</PreferenceScreen>

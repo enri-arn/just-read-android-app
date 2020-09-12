@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    android:padding="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginTop="2dp"
+    android:layout_marginBottom="1dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/item_book_cover_borrowed"
+            android:layout_width="105dp"
+            android:layout_height="160dp"
+            android:contentDescription="@string/book_cover"
+            android:src="@drawable/square_background" />
+
+        <TextView
+            android:id="@+id/item_book_title_borrowed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/item_book_cover_borrowed"
+            android:layout_toRightOf="@+id/item_book_cover_borrowed"
+            android:ellipsize="marquee"
+            android:maxLines="2"
+            android:padding="5dp"
+            android:text="@string/item_default_title_book"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/item_book_author_borrowed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_book_title_borrowed"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/item_book_cover_borrowed"
+            android:layout_toRightOf="@+id/item_book_cover_borrowed"
+            android:ellipsize="marquee"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:text="@string/item_default_title_author"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/item_book_end_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/progressbar_end_date"
+            android:layout_alignLeft="@+id/progressbar_end_date"
+            android:layout_alignStart="@+id/progressbar_end_date"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:text="@string/default_end_date"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            tools:ignore="RtlSymmetry,SmallSp" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_delivery_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_event_available_white_24dp"
+            fab:fab_label="@string/fab_book"
+            fab:fab_size="mini"
+            fab:fab_colorNormal="@color/accent"/>
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_refresh_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/fab_delivery_item"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_loop_white_24dp"
+            fab:fab_colorNormal="@color/accent"
+            fab:fab_label="@string/fab_send_home"
+            fab:fab_size="mini"
+            tools:ignore="RelativeOverlap" />
+
+        <ProgressBar
+            android:id="@+id/progressbar_end_date"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_height="wrap_content"
+            android:layout_width="130dp"
+            android:scaleY="1.4"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@+id/item_book_cover_borrowed"
+            android:layout_toRightOf="@+id/item_book_cover_borrowed"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp" />
+
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

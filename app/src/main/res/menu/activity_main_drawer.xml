@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item android:title="@string/library_nav">
+        <menu>
+            <group
+                android:id="@+id/menu_top"
+                android:checkableBehavior="single">
+
+                <item
+                    android:id="@+id/nav_catalog"
+                    android:icon="@drawable/ic_collections_bookmark_black_24dp"
+                    android:title="@string/drawer_catalog" />
+                <item
+                    android:id="@+id/nav_borrowed"
+                    android:icon="@drawable/ic_book_black_24dp"
+                    android:title="@string/drawer_borrowed" />
+                <item
+                    android:id="@+id/nav_history"
+                    android:icon="@drawable/ic_av_timer_black_24dp"
+                    android:title="@string/drawer_history" />
+                <item
+                    android:id="@+id/nav_favourite"
+                    android:icon="@drawable/ic_favorite_black_24dp"
+                    android:title="@string/drawer_favoutite" />
+                <item
+                    android:id="@+id/nav_contact"
+                    android:icon="@drawable/ic_contact_phone_black_24dp"
+                    android:title="@string/drawer_contact" />
+            </group>
+        </menu>
+    </item>
+    <item android:title="@string/profile_nav">
+        <menu>
+            <item
+                android:id="@+id/nav_profile"
+                android:icon="@drawable/ic_person_gray_24dp"
+                android:title="@string/drawer_profile" />
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/ic_power_settings_new_black_24dp"
+                android:title="@string/drawer_logout" />
+        </menu>
+    </item>
+    <item android:title="@string/application_nav">
+        <menu>
+            <group
+                android:id="@+id/menu_bottom"
+                android:checkableBehavior="none">
+
+                <item
+                    android:id="@+id/nav_options"
+                    android:icon="@drawable/ic_build_black_24dp"
+                    android:title="@string/drawer_option" />
+                <item
+                    android:id="@+id/nav_about"
+                    android:icon="@drawable/ic_group_add_black_24dp"
+                    android:title="@string/drawer_about" />
+            </group>
+        </menu>
+    </item>
+</menu>

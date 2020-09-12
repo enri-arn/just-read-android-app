@@ -1,0 +1,277 @@
+<resources>
+    <string name="app_name">Just Read</string>
+
+    <!-- ACTIVITY TITLE NAME -->
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_book">BookActivity</string>
+    <string name="title_activity_genre">GenreActivity</string>
+    <string name="title_activity_contact">Contacts</string>
+    <string name="title_activity_setttings">Options</string>
+    <string name="title_activity_profile">Profile</string>
+    <string name="title_activity_search">Result</string>
+    <string name="title_activity_edit_profile">Edit profile</string>
+
+    <!-- FRAGMENT TITLE NAME -->
+    <string name="title_fragment_catalog">Catalog</string>
+    <string name="title_fragment_borrowed">Borrowing</string>
+    <string name="title_fragment_history">History</string>
+    <string name="title_fragment_favourite">Favourite</string>
+
+    <!-- DRAWER MENU NAME -->
+    <string name="drawer_catalog">Catalog</string>
+    <string name="drawer_borrowed">Borrowing</string>
+    <string name="drawer_history">History</string>
+    <string name="drawer_favoutite">Favourites</string>
+    <string name="drawer_option">Options</string>
+    <string name="drawer_contact">Contacts</string>
+    <string name="drawer_about">About us</string>
+    <string name="drawer_logout">Log out</string>
+    <string name="drawer_profile">Profile</string>
+    <string name="library_nav">Library</string>
+    <string name="application_nav">Application</string>
+    <string name="profile_nav">Profile</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="menu_share">Share book</string>
+
+    <!-- GENRE NAME -->
+    <string name="genre_home_and_garden">Home</string>
+    <string name="genre_computer_and_tecnology">Computer and tecnology</string>
+    <string name="genre_kitchen_and_food">Kitchen and food</string>
+    <string name="genre_economy">Economy</string>
+    <string name="genre_sience_fiction">Sience fiction</string>
+    <string name="genre_fantasy">Fantasy</string>
+    <string name="genre_detective_story_thriller">Detective story and thriller</string>
+    <string name="genre_books_for_children">Books for children</string>
+    <string name="genre_fiction_and_literature">Fiction and literature</string>
+    <string name="genre_policy_and_current_events">Policy and current events</string>
+    <string name="genre_religion">Religion</string>
+    <string name="genre_romance_novel">Romance novel</string>
+    <string name="genre_health_and_fitness">Health and fitness</string>
+    <string name="genre_sport">Soprt</string>
+    <string name="genre_history">History</string>
+    <string name="genre_travel">Travel</string>
+
+    <!-- IMAGE CONTENT DESCRIPTION -->
+    <string name="book_cover">book cover</string>
+    <string name="book_title">book title</string>
+    <string name="book_author">book author</string>
+    <string name="genre_icon">category image</string>
+    <string name="rating_star">rating star</string>
+    <string name="default_rate">4.5</string>
+    <string name="default_end_date">21 / 12 / 2012   –   02 / 01 / 2018</string>
+    <string name="catalog_genre_cover">catalog category cover</string>
+    <string name="profile_image">prfile image</string>
+
+    <!-- FAB TEXT LABEL -->
+    <string name="fab_book">Book</string>
+    <string name="fab_send_home">Send home</string>
+    <string name="fab_extend_loan">Extend loan</string>
+    <string name="fab_delivery_book">Delivery book</string>
+
+    <!-- SERVER OFFLINE -->
+    <string name="server_offline">The connection with the server has failed, check your network connection</string>
+    <string name="connection_lost">Connection lost</string>
+    <string name="go_to_option">GO TO OPTION</string>
+
+    <!-- SETTINGS -->
+    <string-array name="lists">
+        <item>Italiano</item>
+        <item>English</item>
+    </string-array>
+    <string name="notifications">Notifications</string>
+    <string name="enable_notifications">Enable notifications</string>
+    <string name="calendar_sincro">Sincronize with calendar</string>
+    <string name="sincro_title">Sincronize loan with Google calendar</string>
+    <string name="choose_language">Choose language</string>
+    <string name="language_settings">Language</string>
+    <string name="fast_scroll">Fast scroll</string>
+    <string name="fast_scroll_summary">Enable fast scrolling in vertical list</string>
+    <string name="application_general">General</string>
+    <string name="application_accessibility">Accessibility</string>
+
+    <!-- ITEM DEFAULT TEXT -->
+    <string name="item_default_title_book">Default title with multiple line.</string>
+    <string name="item_default_title_author">Default author</string>
+
+    <!-- ITEM DEFAULT TEXT -->
+    <string name="default_library_name">Just Read</string>
+    <string name="default_library_street">Via Pessinetto 19, TO </string>
+    <string name="default_library_phone">3476681614</string>
+    <string name="default_library_mail">justread.jr@flashmail.it</string>
+    <string name="default_library_site">www.justRead.it</string>
+    <string name="link_site">www.JustRead.com</string>
+    <string name="more_info_about">More info about</string>
+
+    <!-- ITEM DEFAULT TEXT -->
+    <string name="genre_title">Categories</string>
+    <string name="info_title">Info</string>
+    <string name="plot_title">Plot</string>
+    <string name="review_title1">Your review</string>
+    <string name="review_title2">Reviews</string>
+    <string name="default_user_name">Pippo user</string>
+    <string name="default_user_review">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer a urna vitae ante commodo rutrum. Quisque ut diam nibh. Aenean.
+    </string>
+    <string name="show_more">SHOW MORE</string>
+    <string name="publisher">Publisher</string>
+    <string name="page">Pages</string>
+    <string name="isbn">ISBN</string>
+    <string name="language">Language</string>
+    <string name="default_rate_expanded">4.5</string>
+    <string name="default_number_voters">109</string>
+    <string name="default_publisher">default publisher</string>
+    <string name="default_page">1234</string>
+    <string name="default_isbn">123456789123</string>
+    <string name="default_language">English</string>
+    <string name="default_name_surname">Name Surname</string>
+    <string name="default_review_text">Rate this book</string>
+    <string name="default_confirm">Confirm and send</string>
+    <string name="default_suggestion_review">Let us know your opinion</string>
+    <string name="change_image_profile">Change your profile image</string>
+    <string name="modifier_button">modifier button</string>
+    <string name="modified_review">Change your review</string>
+    <string name="search_title">search</string>
+    <string name="search_hint">search</string>
+    <string name="profile_log">Notice Board</string>
+    <string name="notice_board_sample">
+        21/12/2017  10:55\n  You have share "Harry Potter"\n\n
+        13/10/2017  21:00\n  You have borrowed "IT"\n\n
+        21/12/2017  10:55\n  You have share "Harry Potter"\n\n
+        13/10/2017  21:00\n  You have borrowed "IT"\n\n
+        21/12/2017  10:55\n  You have share "Harry Potter"\n\n
+        13/10/2017  21:00\n  You have borrowed "IT"\n\n
+        21/12/2017  10:55\n  You have share "Harry Potter"\n\n
+        13/10/2017  21:00\n  You have borrowed "IT"\n\n
+        21/12/2017  10:55\n  You have share "Harry Potter"\n\n
+        13/10/2017  21:00\n  You have borrowed "IT"\n\n
+        21/12/2017  10:55\n  You have share "Harry Potter"\n\n
+        13/10/2017  21:00\n  You have borrowed "IT"\n\n
+        21/12/2017  10:55\n  You have share "Harry Potter"\n\n
+        13/10/2017  21:00\n  You have borrowed "IT"\n\n
+        21/12/2017  10:55\n  You have share "Harry Potter"\n\n
+        13/10/2017  21:00\n  You have borrowed "IT"\n\n
+        21/12/2017  10:55\n  You have share "Harry Potter"\n\n
+        13/10/2017  21:00\n  You have borrowed "IT"\n\n
+        21/12/2017  10:55\n  You have share "Harry Potter"\n\n
+        13/10/2017  21:00\n  You have borrowed "IT"\n\n
+        21/12/2017  10:55\n  You have share "Harry Potter"\n\n
+        13/10/2017  21:00\n  You have borrowed "IT"\n\n
+        21/12/2017  10:55\n  You have share "Harry Potter"\n\n
+        13/10/2017  21:00\n  You have borrowed "IT"\n\n
+        21/12/2017  10:55\n  You have share "Harry Potter"\n\n
+        13/10/2017  21:00\n  You have borrowed "IT"\n\n
+        21/12/2017  10:55\n  You have share "Harry Potter"\n\n
+        13/10/2017  21:00\n  You have borrowed "IT"\n\n
+        21/12/2017  10:55\n  You have share "Harry Potter"\n\n
+        13/10/2017  21:00\n  You have borrowed "IT"\n\n
+        21/12/2017  10:55\n  You have share "Harry Potter"\n\n
+        13/10/2017  21:00\n  You have borrowed "IT"\n\n
+    </string>
+    <string name="large_text">
+        "Material is the metaphor.\n\n"
+
+        "A material metaphor is the unifying theory of a rationalized space and a system of motion."
+        "The material is grounded in tactile reality, inspired by the study of paper and ink, yet "
+        "technologically advanced and open to imagination and magic.\n"
+        "Surfaces and edges of the material provide visual cues that are grounded in reality. The "
+        "use of familiar tactile attributes helps users quickly understand affordances. Yet the "
+        "flexibility of the material creates new affordances that supercede those in the physical "
+        "world, without breaking the rules of physics.\n"
+        "The fundamentals of light, surface, and movement are key to conveying how objects move, "
+        "interact, and exist in space and in relation to each other. Realistic lighting shows "
+        "seams, divides space, and indicates moving parts.\n\n"
+
+        "Bold, graphic, intentional.\n\n"
+
+        "The foundational elements of print based design typography, grids, space, scale, color, "
+        "and use of imagery guide visual treatments. These elements do far more than please the "
+        "eye. They create hierarchy, meaning, and focus. Deliberate color choices, edge to edge "
+        "imagery, large scale typography, and intentional white space create a bold and graphic "
+        "interface that immerse the user in the experience.\n"
+        "An emphasis on user actions makes core functionality immediately apparent and provides "
+        "waypoints for the user.\n\n"
+
+        "Motion provides meaning.\n\n"
+
+        "Motion respects and reinforces the user as the prime mover. Primary user actions are "
+        "inflection points that initiate motion, transforming the whole design.\n"
+        "All action takes place in a single environment. Objects are presented to the user without "
+        "breaking the continuity of experience even as they transform and reorganize.\n"
+        "Motion is meaningful and appropriate, serving to focus attention and maintain continuity. "
+        "Feedback is subtle yet clear. Transitions are efﬁcient yet coherent.\n\n"
+
+        "3D world.\n\n"
+
+        "The material environment is a 3D space, which means all objects have x, y, and z "
+        "dimensions. The z-axis is perpendicularly aligned to the plane of the display, with the "
+        "positive z-axis extending towards the viewer. Every sheet of material occupies a single "
+        "position along the z-axis and has a standard 1dp thickness.\n"
+        "On the web, the z-axis is used for layering and not for perspective. The 3D world is "
+        "emulated by manipulating the y-axis.\n\n"
+
+        "Light and shadow.\n\n"
+
+        "Within the material environment, virtual lights illuminate the scene. Key lights create "
+        "directional shadows, while ambient light creates soft shadows from all angles.\n"
+        "Shadows in the material environment are cast by these two light sources. In Android "
+        "development, shadows occur when light sources are blocked by sheets of material at "
+        "various positions along the z-axis. On the web, shadows are depicted by manipulating the "
+        "y-axis only. The following example shows the card with a height of 6dp.\n\n"
+
+        "Resting elevation.\n\n"
+
+        "All material objects, regardless of size, have a resting elevation, or default elevation "
+        "that does not change. If an object changes elevation, it should return to its resting "
+        "elevation as soon as possible.\n\n"
+
+        "Component elevations.\n\n"
+
+        "The resting elevation for a component type is consistent across apps (e.g., FAB elevation "
+        "does not vary from 6dp in one app to 16dp in another app).\n"
+        "Components may have different resting elevations across platforms, depending on the depth "
+        "of the environment (e.g., TV has a greater depth than mobile or desktop).\n\n"
+
+        "Responsive elevation and dynamic elevation offsets.\n\n"
+
+        "Some component types have responsive elevation, meaning they change elevation in response "
+        "to user input (e.g., normal, focused, and pressed) or system events. These elevation "
+        "changes are consistently implemented using dynamic elevation offsets.\n"
+        "Dynamic elevation offsets are the goal elevation that a component moves towards, relative "
+        "to the component’s resting state. They ensure that elevation changes are consistent "
+        "across actions and component types. For example, all components that lift on press have "
+        "the same elevation change relative to their resting elevation.\n"
+        "Once the input event is completed or cancelled, the component will return to its resting "
+        "elevation.\n\n"
+
+        "Avoiding elevation interference.\n\n"
+
+        "Components with responsive elevations may encounter other components as they move between "
+        "their resting elevations and dynamic elevation offsets. Because material cannot pass "
+        "through other material, components avoid interfering with one another any number of ways, "
+        "whether on a per component basis or using the entire app layout.\n"
+        "On a component level, components can move or be removed before they cause interference. "
+        "For example, a floating action button (FAB) can disappear or move off screen before a "
+        "user picks up a card, or it can move if a snackbar appears.\n"
+        "On the layout level, design your app layout to minimize opportunities for interference. "
+        "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
+        "when a user tries to pick up one of cards.\n\n"
+    </string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password </string>
+    <string name="action_sign_in">Welcome to JustRead!</string>
+    <string name="action_sign_in_btn">LOGIN</string>
+    <string name="insert_email_here">Insert email here</string>
+    <string name="insert_pwd_here">Insert password here</string>
+    <string name="register">Don\'t have an account yet? </string>
+    <string name="logo_aplication">logo_aplication</string>
+    <string name="register_link"><u>Register</u></string>
+
+
+</resources>
