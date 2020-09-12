@@ -1,1 +1,3 @@
-# just-read-android-app
+# JustRead android-app
+
+Android application for library management
